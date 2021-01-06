@@ -28,9 +28,11 @@ header
     justify-content: space-between;
     align-items: flex-end;
 }
-#logo
+.logo
 {
     float: left;
+    width: 150px
+    
 }
 #titre
 {
@@ -42,19 +44,20 @@ header
 }
 /* Navigation */
 
-nav ul
+.headernav ul
 {
     list-style-type: none;
     display: flex;
+    
 }
 
-nav li
+.headernav li
 {
     margin-right: 15px;
     margin-top: 20px;
 }
 
-nav a
+.headernav a
 {
     font-size: 1.3em;
     color: #181818;
@@ -62,7 +65,7 @@ nav a
     text-decoration: none;
 }
 
-nav a:hover
+.headernav a:hover
 {
     color: #0065FC;
     border-top: 6px solid #0065FC;
@@ -191,4 +194,42 @@ nav a:hover
 footer
 {
     background-color: #F2F2F2;
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: -3%;
+    margin-right: -3%;
+    margin-top: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footertitle
+{
+    font-weight: bold;
+}
+
+#footernav1 ul, #footernav2 ul, #footernav3 ul
+{
+    list-style: none;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#footernav1 ul, #footernav2 ul
+{
+    padding-right: 250px;
+}
+
+footer a
+{
+    color: black;
+    text-decoration: none;
+}
+footer a:hover
+{
+    color: #0065fc;
+    font-weight: bolder;
 }
