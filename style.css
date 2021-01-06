@@ -1,9 +1,194 @@
+/* Définition des polices personnalisées */
+
 @font-face
 {
     font-family: 'raleway';
     src: url('fonts/Raleway-VariableFont_wght.ttf');
 }
+
+/* Eléments principaux de la page */
+
 body
 {
     font-family: 'raleway';
+}
+#bloc_page
+{
+    margin: 0;
+    padding: 0;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#logo
+{
+    float: left;
+}
+#titre
+{
+    font-size: 1.2em;
+}
+#sous_titre
+{
+    font-size: 0.7em;
+}
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 6px solid #0065FC;
+    line-height: 20px;
+    padding-top: 40px;    
+}
+#inscrire
+{
+    color: #0065FC;
+}
+
+/* Barre de recherche */
+
+#search
+{
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: left;
+    vertical-align: baseline;
+    align-content: flex-start;
+    border: none;
+    margin: auto;
+    overflow: auto;
+}
+#cadrelocalisation
+{
+    width: 20px;
+    border: 2px solid #f2f2f2;
+    font-size: 15px;
+    background-color:  #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    text-align: center;
+    padding: 12px;
+}
+
+
+#textederecherche
+{
+    display: inline;
+    padding: 12px;
+    border: 2px solid #f2f2f2;
+    width: 210px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#submitrecherche
+{
+    width: 100px;
+    border: 2px solid #f2f2f2;
+    font-size: 15px;
+    font-weight: bold;
+    background-color:  #F2F2F2;
+    border-radius: 0px 15px 15px 0px;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    background-color: #0065fc;
+    color: white;
+}
+
+/* Filtres */
+
+#conteneurfiltre
+{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.filtre 
+{
+    display: inline-block;
+    border: 2px solid #f2f2f2;
+    padding-right: 16px;
+    border-radius: 30px;
+    margin-left: 30px;
+    user-select: none;
+    cursor: pointer;
+    
+}
+
+.filtre:hover
+{
+    background-color: #f3f8ff;
+    transform: scale(1.015);
+    font-weight: bolder;
+}
+.filtre i 
+{
+    padding: 16px;
+    border-radius: 100px;
+    margin-right: 10px;
+    color: #0065FC;
+    background-color: #deebff;
+    margin-left: -2px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    border: 1px solid #deebff;
+    width: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#info
+{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#info i
+{
+    border: 2px solid #F2F2F2;
+    padding: 8px;
+    border-radius: 100%;
+    color: #0065fc;
+    text-align: center;
+    width: 12px;
+    margin-right: 15px;
+    font-size: 12px;  
+}
+
+/* Footer */
+
+footer
+{
+    background-color: #F2F2F2;
 }
