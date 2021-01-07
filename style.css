@@ -10,12 +10,12 @@
 
 body
 {
-    font-family: 'raleway';
+    font-family: 'raleway', 'sans-serif';
 }
 #bloc_page
 {
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* Header */
@@ -34,11 +34,11 @@ header
 }
 #titre
 {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 #sous_titre
 {
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
 /* Navigation */
 
@@ -189,15 +189,23 @@ header
 
 /* Hébergements Ville */
 
+#hebergementvilleetpopulaire
+{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
 #conthebergville
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 30px; 
     width: 880px;
     background-color: #f2f2f2;
     border-radius: 15px;
+    flex: 2;
 }
 
 .hebergements a
@@ -285,18 +293,117 @@ header
     color: #0065fc;
 }
 
+/* Les plus populaires */
+
+#conthebergpop
+{
+    width: 440px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    flex: 1;
+    margin-left: 50px;
+}
+
+.hebergementspop
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+#hebergpop
+{
+    margin-left: 30px;
+    margin-right: 21px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popfig
+{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin: 0;
+    padding: 6px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
+    width: auto;
+}
+
+.popfig:hover
+{
+    background-color: #f3f8ff;
+    transform: scale(1.015);
+}
+
+.lienhebergpop
+{
+    margin: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.popfig img
+{
+    width: 130px;
+    height: 150px;
+    border-radius: 10px 0px 0px 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.popfig i
+{
+    margin-top: 30px;
+}
+
+.figcaptionhebergementpop
+{
+    margin-left: 24px;
+    width: 160px;
+}
+
+.figcaptionhebergementpop i
+{
+    color: #0065fc;
+}
+
+.titrephotopop
+{
+    margin-top: 10px;
+    color: black;
+}
+
+.couthebergementpop
+{
+    margin-top: -10px; 
+    color: black;
+}
+
+
 /* Footer */
 
 footer
 {
     background-color: #F2F2F2;
-    flex-wrap: wrap;
-    display: flex;
-    margin-left: -4%;
-    margin-right: -4%;
+    margin-left: -14%;
+    margin-right: -14%;
     margin-top: 20px;
     justify-content: flex-start;
     align-items: flex-start;
+}
+
+#contfooter
+{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 9%;
 }
 
 .footertitle
