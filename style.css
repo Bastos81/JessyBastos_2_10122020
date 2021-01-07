@@ -34,11 +34,11 @@ header
 }
 #titre
 {
-    font-size: 1.4em;
+    font-size: 2em;
 }
 #sous_titre
 {
-    font-size: 0.9em;
+    font-size: 1em;
 }
 /* Navigation */
 
@@ -384,6 +384,113 @@ header
     color: black;
 }
 
+/* Activités */
+
+#contactivités
+{
+    margin-top: 30px; 
+}
+
+.contimgact
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.lienactivités
+{
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#contactivités figure
+{
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #f2f2f2;
+    margin-top: 13px;
+    margin: 0;
+    box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
+}
+
+#contactivités figure:hover
+{
+    background-color: #f3f8ff;
+    transform: scale(1.015);
+}
+
+#contactivités a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#contactivités a:hover
+{
+    color: #0065fc;
+    font-weight: bold;
+}
+
+.figactivités img
+{
+    width: 310px;
+    height: 410px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.figcaptionactivités
+{
+    align-items: center;
+    margin-left: 30px;
+    font-weight: bold;  
+}
+
+.activitésfig1_2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+}
+
+.figactivités1_2 img
+{
+    width: 310px;
+    height: 150px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.activitésfig2_3
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.figactivités2_3 img
+{
+    width: 310px;
+    height: 200px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.figactivités1_3 img
+{
+    width: 310px;
+    height: 100px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
 
 /* Footer */
 
@@ -397,7 +504,7 @@ footer
     align-items: flex-start;
 }
 
-#contfooter
+.contfooter
 {
     flex-wrap: wrap;
     display: flex;
@@ -430,6 +537,7 @@ footer a
 {
     color: black;
     text-decoration: none;
+    font-size: 1.2em;
 }
 footer a:hover
 {
@@ -442,4 +550,6 @@ footer a:hover
 .fa-cogs
 {
     font-size: 100px;
+    padding-left: 50px;
+    padding-top: 50px;
 }
