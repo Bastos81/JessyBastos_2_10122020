@@ -2,7 +2,9 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" media="all and (max-width: 480px)" href="css/mobile.css" />
         <script src="https://kit.fontawesome.com/3858f0544e.js" crossorigin="anonymous"></script>
 	    <title>Reservia</title>
     </head>
@@ -13,13 +15,15 @@
 <!--Logo + navigation-->
 
             <header>
-                <img src="images/logo/Reservia.svg" alt="Réservia" class="logo"/>
-            
+                <div class="headermobile">
+                    <div><img src="images/logo/Reservia.svg" alt="Réservia" class="logo"/></div>
+                    <div><a id="inscriremobile" href="pageconstruction/construction.html">S'inscrire</a></div>
+                </div>
                 <nav class="headernav">
                     <ul>
                         <li><a id="hébergements" href="#conthebergville">Hébergements</a></li>
                         <li><a id="activités" href="#contactivités">Activités</a></li>
-                        <li><a id="inscrire" href="pageconstruction/construction.html">S'inscrire</a></li>
+                        <li class="li_inscrire"><a id="inscrire" href="pageconstruction/construction.html">S'inscrire</a></li>
                     </ul>
                 </nav>
             </header>

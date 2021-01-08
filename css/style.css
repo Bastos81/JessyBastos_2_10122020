@@ -3,7 +3,7 @@
 @font-face
 {
     font-family: 'raleway';
-    src: url('fonts/Raleway-VariableFont_wght.ttf');
+    src: url('../fonts/Raleway-VariableFont_wght.ttf');
 }
 
 /* Eléments principaux de la page */
@@ -26,22 +26,30 @@ header
     justify-content: space-between;
     align-items: flex-end;
 }
+
 .logo
 {
     float: left;
-    width: 150px
-    
+    width: 150px 
 }
+
 #titre
 {
     font-size: 2em;
 }
+
 #sous_titre
 {
     margin-top: -10px;
     font-size: 1em;
 }
+
 /* Navigation */
+
+#inscriremobile
+{
+    display: none;
+}
 
 .headernav ul
 {
@@ -62,14 +70,18 @@ header
     color: #181818;
     padding-bottom: 3px;
     text-decoration: none;
+    line-height: 20px;
+    padding-top: 35px;
+    padding-left: 10px;
+    border-top: 2px solid transparent;
 }
 
 .headernav a:hover
 {
     color: #0065FC;
-    border-top: 6px solid #0065FC;
+    border-top: 2px solid #0065FC;
     line-height: 20px;
-    padding-top: 40px;    
+    padding-top: 35px;
 }
 #inscrire
 {
@@ -159,7 +171,6 @@ header
 {
     background-color: #f3f8ff;
     transform: scale(1.015);
-    font-weight: bolder;
 }
 .filtre i 
 {
