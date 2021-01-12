@@ -106,3 +106,57 @@ header
     border-top: none;
     color: #0065fc;
 }
+
+/* Titres + Barre de recherche */
+
+#recherche
+{
+    display: flex; 
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}     
+
+#titre
+{
+    font-size: 1.8em;
+}
+
+#sous_titre
+{
+    font-size: 1em;
+}
+
+#search
+{
+    margin-top: 20px;
+    margin-left: unset;
+}
+
+/* Filtres */
+
+#conteneurfiltre
+{
+    margin-top: 40px;
+}
+
+#titrefiltre
+{
+    padding-left: 20px;
+
+}
+
+.retour_mobile
+{
+    display: unset;
+}
+
+.filtreeco
+{
+    margin-top: 20px;   
+}
+
+.filtre
+{
+    margin-top: 10px;
+}

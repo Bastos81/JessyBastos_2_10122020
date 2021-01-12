@@ -24,6 +24,34 @@
                 </nav>
             </header>
 
+<!--Titres + recherche + filtres-->
+
+<section>
+    <div id="recherche">
+        <h1 id="titre">Trouver votre hébergement de rêve</h1>
+        <h2 id="sous_titre">En plein centre ville ou en pleine nature</h2>
+        
+        <form id="search" method="post" action="traitement.php">
+                <span id="cadrelocalisation"><i class="fas fa-map-marker-alt"></i></span>
+                <input type="search" name="recherche" id="textederecherche" placeholder="Marseille, France">
+                <span id="submitrecherche">Rechercher</span>
+        </form>
+    </div>
+
+    <div id="conteneurfiltre">
+        <form id="barrefiltre" method="post" action="traitement.php">
+            <span id="titrefiltre" >Filtres</span>
+            <span class="filtreeco filtre"><i class="fas fa-money-bill-wave"></i>Économique</span>
+            <span class="filtre"><i class="fas fa-child"></i>Familial</span>
+            <span class="filtre"><i class="fas fa-heart"></i>Romantique</span>
+            <span class="filtre"><i class="fas fa-dog"></i>Animaux autorisés</span>
+        </form>    
+    </div>
+
+    <div id="info"><i class="fas fa-info"></i><span>Page bientôt disponible</span></div>
+</section>
+
+
 <!--Site en construction-->
 
 <section id="conthebergville">
@@ -41,7 +69,8 @@
         </a>
     </div>
 </section>
-            
+</div>  
+          
 <!--Footer-->
 
             <footer>
@@ -70,6 +99,6 @@
                     </nav>
                 </div>    
             </footer>
-        </div>
+        
     </body>
 </html>
