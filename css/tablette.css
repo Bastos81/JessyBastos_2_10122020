@@ -1,0 +1,428 @@
+/* Eléments principaux de la page */
+
+@font-face
+{
+    font-family: "raleway";
+    src: url('../fonts/Raleway-VariableFont_wght.ttf');
+}
+
+#bloc_page
+{
+    margin: auto;
+}
+
+h3
+{
+    font-size: 1em;
+}
+
+/* Header + navigation */
+
+.logo
+{
+    float: unset;
+    width: 125px; 
+}
+
+header
+{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: unset;
+    width: 100%;
+}
+
+.headermobile
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.headermobile img
+{ 
+    padding-right: 60vmin;
+}
+
+.headermobile a
+{
+    padding: unset;
+    border: none;
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: #0065fc;
+    text-decoration: none;
+}
+
+.li_inscrire
+{
+    display: none;
+}
+
+#inscriremobile
+{
+    display: initial;
+    border: none;
+}
+
+#inscriremobile:hover
+{
+    text-shadow: navy 0.02em 0.02em 0.02em;
+}
+
+.headernav
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.headernav ul
+{
+    margin: unset;
+    padding: unset;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.headernav li
+{
+    border-bottom: 4px solid lightgrey;
+    text-align: center;
+    margin: unset;
+    width: 100%;
+    padding: 10px;
+    border-top: none;
+    padding-bottom: 10px;
+    border-collapse: collapse;
+}
+
+.headernav li:hover
+{
+    border-top: none;
+    border-bottom: 4px solid #0065fc;
+    cursor: pointer;
+}
+
+.headernav li:hover a
+{
+    color: #0065fc;
+}
+
+.headernav a:hover
+{
+    border-top: none;
+    color: #0065fc;
+}
+
+/* Titres + Barre de recherche */
+
+#recherche
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+}     
+
+#titre
+{
+    font-size: 1.8em;
+}
+
+#sous_titre
+{
+    font-size: 1em;
+    margin-bottom: 40px;
+}
+
+#search
+{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.boutonrecherche
+{
+    border-radius: 15px 15px 15px 15px;
+}
+
+#textederecherche
+{
+    width: 80%;
+    margin-right: -40px;
+}
+
+
+/* Filtres */
+
+#conteneurfiltre
+{
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+#titrefiltre
+{
+    padding-left: 30px;
+    padding-bottom: 30px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+.filtreeco
+{
+    margin-top: 20px;   
+}
+
+.filtre
+{
+    margin-top: 10px;
+}
+
+#info
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Les plus populaires */
+
+#hebergementvilleetpopulaire
+{
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+#conthebergpop
+{
+    width: 97%;
+    margin: unset;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.hebergementspop
+{
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: unset;
+}
+
+.lienhebergpop
+{
+    align-content: flex-start;
+    width: 95%;
+    height: auto;
+    margin: 0,1%;
+    padding-right: 50px;
+}
+
+#hebergpop
+{
+    padding-left: 22px;
+    padding-right: 5px;
+    margin-top: 40px;
+    margin-left: unset;
+    display: flex;
+    justify-content: space-between;
+    max-height: 185px;
+}
+
+.figcaptionhebergementpop
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.popfig
+{
+    margin-top: 20px;
+    margin-left: unset;
+    margin-right: unset;
+    width: 100%;
+    min-width: 420px;
+}
+
+
+.popfig i
+{
+    margin-top: unset;
+}
+
+.popfig img
+{
+    height: auto;
+    min-width: 200px;
+    width: 400px;
+    max-height: 180px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.figcaptionhebergementpop div
+{
+    font-size: 1.2vmin;
+    font-size: 1.6vmax;
+}
+
+.figcaptionhebergementpop div
+{
+    min-width: 250px;
+}
+
+/* Hébergements Ville */
+
+#conthebergville
+{
+    width: 97%;
+    margin: unset;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#hebergville
+{
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 22px;
+}
+
+.hebergements
+{
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: unset;
+}
+
+.lienheberg
+{
+    align-content: flex-start;
+    width: 95%;
+    height: auto;
+    margin: 0,1%;
+    padding-right: 50px;
+}
+
+.hebergfig
+{
+    margin-top: 20px;
+    margin-left: unset;
+    margin-right: unset;
+    width: 100%;
+}
+
+.lienheberg img
+{
+    height: auto;
+    min-width: 150px;
+    width: 100%;
+    max-height: 180px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.hebergafficherplus
+{
+    font-size: 1.2em;
+}
+
+.figcaptionhebergement
+{
+    width: 100%;
+}
+
+.figcaptionhebergement h3, .figcaptionhebergement p
+{
+    min-width: 250px;
+}
+
+/* Activités */
+
+#titreactivités
+{
+    margin-left: 10px;
+}
+
+#contactivités
+{
+    width: 100%;
+    margin: auto;
+}
+
+.contimgact
+{
+    margin-left: unset;
+    margin-right: unset;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}    
+
+.activitésfig2_3, .activitésfig1_2
+{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: unset;
+}
+
+.activitésfig1
+{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: unset;
+}
+
+.lienactivités
+{
+    width: 96%;
+}
+
+.figactivités2_3 img, .figactivités1_2 img, .figactivités1_3 img
+{
+    width: 100%;
+    height: 100px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.figactivités img
+{
+    width: 100%;
+    height: 280px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+
+/* Footer */
+
+footer
+{
+    margin-left: -12px;
+    margin-right: -12px;
+}
