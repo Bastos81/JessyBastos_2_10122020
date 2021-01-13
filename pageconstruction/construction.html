@@ -2,45 +2,50 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" media="all and (min-width: 941px) and (max-width: 1415px)" href="../css/grandetablette.css" />
+        <link rel="stylesheet" media="all and (min-width: 481px) and (max-width: 940px)" href="../css/tablette.css" />
+        <link rel="stylesheet" media="all and (max-width: 480px)" href="../css/mobile.css" />
         <script src="https://kit.fontawesome.com/3858f0544e.js" crossorigin="anonymous"></script>
 	    <title>Reservia</title>
     </head>
     
     <body>
-        <div id="bloc_page">
-            
+        <div id="bloc_page">       
 <!--Logo + navigation-->
 
-            <header>
-                <img src="../images/logo/Reservia.svg" alt="Réservia" class="logo" />
-            
-                <nav class="headernav">
-                    <ul>
-                        <li><a id="hébergements" href="../index.html#conthebergville">Hébergements</a></li>
-                        <li><a id="activités" href="../index.html#contactivités">Activités</a></li>
-                        <li><a id="inscrire" href="#">S'inscrire</a></li>
-                    </ul>
-                </nav>
-            </header>
+<header>
+    <div class="headermobile">
+        <div><img src="../images/logo/Reservia.svg" alt="Réservia" class="logo"/></div>
+        <div><a id="inscriremobile" href="pageconstruction/construction.html">S'inscrire</a></div>
+    </div>
+    <nav class="headernav">
+        <ul>
+            <li><a id="hébergements" href="#conthebergville">Hébergements</a></li>
+            <li><a id="activités" href="#contactivités">Activités</a></li>
+            <li class="li_inscrire"><a id="inscrire" href="pageconstruction/construction.html">S'inscrire</a></li>
+        </ul>
+    </nav>
+</header>
 
 <!--Titres + recherche + filtres-->
 
 <section>
     <div id="recherche">
-        <h1 id="titre">Trouver votre hébergement de rêve</h1>
+        <h1 id="titre">Trouvez votre hébergement pour des vacances de rêve</h1>
         <h2 id="sous_titre">En plein centre ville ou en pleine nature</h2>
         
         <form id="search" method="post" action="traitement.php">
                 <span id="cadrelocalisation"><i class="fas fa-map-marker-alt"></i></span>
                 <input type="search" name="recherche" id="textederecherche" placeholder="Marseille, France">
-                <span id="submitrecherche">Rechercher</span>
+                <a href="../index.html" class="boutonrecherche"><span id="submitrecherche">Rechercher</span><i class="fas fa-search"></i></a>
         </form>
     </div>
 
     <div id="conteneurfiltre">
         <form id="barrefiltre" method="post" action="traitement.php">
-            <span id="titrefiltre" >Filtres</span>
+            <span id="titrefiltre" >Filtres</span><br class="retour_mobile">
             <span class="filtreeco filtre"><i class="fas fa-money-bill-wave"></i>Économique</span>
             <span class="filtre"><i class="fas fa-child"></i>Familial</span>
             <span class="filtre"><i class="fas fa-heart"></i>Romantique</span>
@@ -48,25 +53,17 @@
         </form>    
     </div>
 
-    <div id="info"><i class="fas fa-info"></i><span>Page bientôt disponible</span></div>
+    <div id="info"><i title="Réservez vite" class="fas fa-info"></i><span>Plus de 500 logements sont disponibles dans cette
+    ville</span></div>
 </section>
-
 
 <!--Site en construction-->
 
-<section id="conthebergville">
+<section id="conthecons">
+    <div class="contconstruction">
     <i class="fas fa-cogs"></i>
     <h2 id="hebergville">Site en construction</h2>
-    <div class="hebergements">
-        <a href="../index.html" class="lienheberg">
-            <figure class="hebergfig">
-                <img src="../images/logo/Reservia.svg" alt="Logo Reservia">
-                <figcaption class="figcaptionhebergement"> 
-                    <h3 class="titrephoto">Retourner à l'accueil</h3>
-                    <p class="couthebergement">Cliquez ici</p>
-                </figcaption>
-            </figure>
-        </a>
+    <span class="boutonhome"><a href="../index.html" class="lienheberg"><i class="fas fa-home"></i></a></span>
     </div>
 </section>
 </div>  
