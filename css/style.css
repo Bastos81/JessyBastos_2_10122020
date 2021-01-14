@@ -296,7 +296,6 @@ header
     width: 250px;
     height: 120px;
     border-radius: 20px 20px 0 0;
-    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -395,7 +394,6 @@ header
     width: 130px;
     height: 150px;
     border-radius: 10px 0px 0px 10px;
-    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -488,7 +486,6 @@ header
 {
     width: 310px;
     height: 410px;
-    -o-object-fit: cover;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
 }
@@ -511,7 +508,6 @@ header
 {
     width: 310px;
     height: 150px;
-    -o-object-fit: cover;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
@@ -528,7 +524,6 @@ header
 {
     width: 310px;
     height: 200px;
-    -o-object-fit: cover;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
@@ -537,7 +532,6 @@ header
 {
     width: 310px;
     height: 100px;
-    -o-object-fit: cover;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
